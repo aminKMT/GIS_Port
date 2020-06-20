@@ -48,6 +48,4 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [markup.goldmark.renderer]
 unsafe = true
 
-[context.production.environment]
-  HUGO_VERSION = "0.72.0"
 
