@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "/"
 title = "Origin"
 author = "Andrey Parfenov"
 copyright = "© 2020, Andrey Parfenov"
@@ -8,6 +8,7 @@ DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 theme = "origin-hugo-theme"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
   description = "simple hugo theme"
