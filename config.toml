@@ -1,7 +1,7 @@
 baseURL = "/"
-title = "Origin"
+title = "Transportation GIS Projects"
 author = "Andrey Parfenov"
-copyright = "© 2020, Andrey Parfenov"
+copyright = "© 2020, Amin keramati"
 paginate = 4
 languageCode = "en"
 DefaultContentLanguage = "en"

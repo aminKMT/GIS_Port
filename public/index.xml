@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Origin</title>
+    <title>Transportation GIS Projects</title>
     <link>/</link>
-    <description>Recent content on Origin</description>
+    <description>Recent content on Transportation GIS Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2020, Andrey Parfenov</copyright>
+    <copyright>© 2020, Amin keramati</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -59,14 +59,12 @@ pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>About</title>
+      <title>About me</title>
       <link>/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
+      <description>A Ph.D. candidate focused on transportation and Logistics with experience in transportation accident analysis, vehicle and train routing modeling and simulation, project management modeling. Interested in freight logistics and supply chain management, intelligent transportation systems, autonomous and connected vehicles, multimodal transportation systems, travel demand modeling, and transportation energy. Currently, working at Upper Great Plains Transportation Institute UGPTI, where we work on various research topics, including but not limited to highway-rail grade crossing crash analysis and Routing and Scheduling Complex Railway Networks.</description>
     </item>
     
     <item>
