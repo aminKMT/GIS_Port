@@ -8,7 +8,7 @@ categories:
 date: "2019-03-11"
 description: Sample article showcasing basic Markdown syntax and formatting for HTML
   elements.
-imagelink: https://images.unsplash.com/photo-1587133599421-40a3cd84831b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80
+imagelink: https://giskeramati.netlify.app/hrgc.jpg
 
 series:
 - Themes Guide
