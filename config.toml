@@ -34,6 +34,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "About me"
     url = "/about/"
     weight = 10
+    
+[[menu.main]]
+    identifier = "tags"
+    name = "tags"
+    url = "/tags/"
+    weight = 10
 
 [taxonomies]
   category = "categories"

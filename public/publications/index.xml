@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Transportation GIS Projects</title>
+    <link>/publications/</link>
+    <description>Recent content in Publications on Transportation GIS Projects</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2020, Amin keramati</copyright>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>amin</title>
+      <link>/publications/amin/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/amin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
