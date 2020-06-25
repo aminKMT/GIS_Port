@@ -58,3 +58,4 @@ if (burgerButton) {
     navCloseButton.addEventListener("click", closeHeaderNavHandler);
   });
 }
+

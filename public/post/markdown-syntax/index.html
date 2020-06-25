@@ -146,8 +146,10 @@
 <ol>
 <li><a href="#Project_Abstract">Project Abstract</a></li>
 <li><a href="#Map_Digitizing">Map Digitizing</a></li>
+<li><a href="#Nearest_Intersection_&amp;_Crossing_Distance">Nearest Intersection &amp; Crossing</a></li>
 </ol>
-<h2 id="project-abstract-a-nameproject_abstracta">Project Abstract <a name="Project_Abstract"></a></h2>
+<p><a name="Project_Abstract"></a></p>
+<h2 id="project-abstract">Project Abstract</h2>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Highway-rail grade crossings (HRGCs) are where a roadway and railway intersect at the
 same level.Safety at HRGCs has been identified as a high-priority concern among
 transportation agencies, but there has been little research on the effects of HRGC 
@@ -169,22 +171,31 @@ the distance between crossings and the nearest roadway intersection; and (3) geo
 parameters’ long-term effects on cumulative probability of crash severity and occurrence
 over 30 years is also evaluated. Crossings with three main tracks contribute the highest
 long-term crash probabilities.</code></pre></div>
-<h2 id="map-digitizing-a-namemap_digitizinga">Map Digitizing <a name="Map_Digitizing"></a></h2>
+<p><a name="Map_Digitizing"></a>`</p>
+<h2 id="map-digitizing">Map Digitizing</h2>
 <p>First, North Dakota (ND) roadway network, railway network, signalized
 intersections, and HRGCs from the ND GIS hub portal <a href="https://gishubdata.nd.gov/">NDHUB</a>
 are used in this study to estimate the numerical geometric measures of
 each HRGC. All the GIS spatial features are adjusted to spatially align
 and match with Google street features to obtain integrated and overlaid
-coverage data before the geoprocessing calculation is performed. 
-<a href="#Fig.1">Fig.1</a>
+coverage data before the geoprocessing calculation is performed. <a href="#Fig.1">Fig. 1</a>
 shows the integrated coverage map based on the five geometric measurements
 calculation. The rail line, roadway, roadway intersections,
 and HRGCs all align with the Google map of the area. Note that the
 original NDHUB crossing locations are not spatially aligned with the
 rest of the geo-features, but the spatial crossing locations were based on
 aligned and matched digitized crossings.</p>
-<p>Figure 1: Integrated and overlaid coverage with geometric measurements <a name="Fig.1"></a>
+<p><a name="Fig.1"></a>
+Figure 1: Integrated and overlaid coverage with geometric measurements <a name="Fig.1"></a>
 <a href="/images/fig1array.png"><img src="/images/fig1array.png" alt="drawing" width="700"/></a></p>
+<p><a name="Nearest_Intersection_&_Crossing_Distance"></a></p>
+<h2 id="nearest-intersection--crossing">Nearest Intersection &amp; Crossing</h2>
+<p>Distances between crossings to their closest roadway intersection and crossing
+are calculated by first identifying the nearest intersection/crossing to each
+HRGC and then measuring the distance between the HRGC and the intersection/Crossing [<a href="#Fig.2">Fig. 2</a>]. To estimate these distances GIS network analysis conducted by using the <a href="https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/what-is-network-analyst-.htm">ArcGIS Network Analyst extension</a>.</p>
+<p><a name="Fig.2"></a>
+Figure 2: Finding the Nearest road intersection and crossing along road and railroad <a name="Fig.2"></a>
+<a href="/images/IIFig2.jpg"><img src="/images/IIFig2.jpg" alt="drawing" width="700"/></a></p>
 <p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1</h1>
 <h2 id="h2">H2</h2>
@@ -329,6 +340,8 @@ aligned and matched digitized crossings.</p>
         <span>home</span>
     </a>
 </button>
+
+
 
 
     </div>

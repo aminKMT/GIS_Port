@@ -17,8 +17,10 @@ title: Highway-Rail Grade Crossing Safety
 # Table of Contents
 1. [Project Abstract](#Project_Abstract)
 2. [Map Digitizing](#Map_Digitizing)
+3. [Nearest Intersection & Crossing](#Nearest_Intersection_&_Crossing_Distance)
 
-## Project Abstract <a name="Project_Abstract"></a>
+<a name="Project_Abstract"></a>
+## Project Abstract 
 {{< highlight html >}}
 Highway-rail grade crossings (HRGCs) are where a roadway and railway intersect at the
 same level.Safety at HRGCs has been identified as a high-priority concern among
@@ -43,14 +45,14 @@ over 30 years is also evaluated. Crossings with three main tracks contribute the
 long-term crash probabilities.
 {{< /highlight >}}
 
-## Map Digitizing <a name="Map_Digitizing"></a>
+<a name="Map_Digitizing"></a>`
+## Map Digitizing 
 First, North Dakota (ND) roadway network, railway network, signalized
 intersections, and HRGCs from the ND GIS hub portal [NDHUB](https://gishubdata.nd.gov/)
 are used in this study to estimate the numerical geometric measures of
 each HRGC. All the GIS spatial features are adjusted to spatially align
 and match with Google street features to obtain integrated and overlaid
-coverage data before the geoprocessing calculation is performed. 
-[Fig.1](#Fig.1)
+coverage data before the geoprocessing calculation is performed. [Fig. 1](#Fig.1)
 shows the integrated coverage map based on the five geometric measurements
 calculation. The rail line, roadway, roadway intersections,
 and HRGCs all align with the Google map of the area. Note that the
@@ -58,8 +60,19 @@ original NDHUB crossing locations are not spatially aligned with the
 rest of the geo-features, but the spatial crossing locations were based on
 aligned and matched digitized crossings.
 
+<a name="Fig.1"></a>
 Figure 1: Integrated and overlaid coverage with geometric measurements <a name="Fig.1"></a>
 [<img src="/images/fig1array.png" alt="drawing" width="700"/>](/images/fig1array.png)
+
+<a name="Nearest_Intersection_&_Crossing_Distance"></a>
+## Nearest Intersection & Crossing 
+Distances between crossings to their closest roadway intersection and crossing
+are calculated by first identifying the nearest intersection/crossing to each
+HRGC and then measuring the distance between the HRGC and the intersection/Crossing [[Fig. 2](#Fig.2)]. To estimate these distances GIS network analysis conducted by using the [ArcGIS Network Analyst extension](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/what-is-network-analyst-.htm).
+
+<a name="Fig.2"></a>
+Figure 2: Finding the Nearest road intersection and crossing along road and railroad <a name="Fig.2"></a>
+[<img src="/images/IIFig2.jpg" alt="drawing" width="700"/>](/images/IIFig2.jpg)
 
 
 
