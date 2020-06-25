@@ -45,7 +45,7 @@ over 30 years is also evaluated. Crossings with three main tracks contribute the
 long-term crash probabilities.
 {{< /highlight >}}
 
-<a name="Map_Digitizing"></a>`
+<a name="Map_Digitizing"></a>
 ## Map Digitizing 
 First, North Dakota (ND) roadway network, railway network, signalized
 intersections, and HRGCs from the ND GIS hub portal [NDHUB](https://gishubdata.nd.gov/)
@@ -71,7 +71,7 @@ are calculated by first identifying the nearest intersection/crossing to each
 HRGC and then measuring the distance between the HRGC and the intersection/Crossing [[Fig. 2](#Fig.2)]. To estimate these distances GIS network analysis conducted by using the [ArcGIS Network Analyst extension](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/what-is-network-analyst-.htm).
 
 <a name="Fig.2"></a>
-Figure 2: Finding the Nearest road intersection and crossing along road and railroad <a name="Fig.2"></a>
+Figure 2: Finding the nearest road intersection and crossing along road and railroad <a name="Fig.2"></a>
 [<img src="/images/IIFig2.jpg" alt="drawing" width="700"/>](/images/IIFig2.jpg)
 
 
