@@ -1,7 +1,7 @@
 ---
 aliases:
 - migrate-from-jekyl
-author: Hugo Authors
+author: Amin Keramati
 categories:
 - themes
 - syntax
@@ -18,6 +18,10 @@ title: Highway-Rail Grade Crossing Safety
 1. [Project Abstract](#Project_Abstract)
 2. [Map Digitizing](#Map_Digitizing)
 3. [Nearest Intersection & Crossing](#Nearest_Intersection_&_Crossing_Distance)
+4. [Smallest Crossing Angle](#Smallest_Crossing_Angle)
+5. [Computational Results](#Computational_Results)
+6. [HRGC Geometric Effect Calculator](https://kmtgis.shinyapps.io/ak_plot/)
+7. [Related Publication](https://doi.org/10.1016/j.aap.2020.105470)
 
 <a name="Project_Abstract"></a>
 ## Project Abstract 
@@ -62,141 +66,73 @@ aligned and matched digitized crossings.
 
 <a name="Fig.1"></a>
 Figure 1: Integrated and overlaid coverage with geometric measurements <a name="Fig.1"></a>
-[<img src="/images/fig1array.png" alt="drawing" width="700"/>](/images/fig1array.png)
+[<img src="/images/fig1array.png" alt="drawing" title="Klick to see Larger scale!" width="700"/>](/images/fig1array.png)
 
 <a name="Nearest_Intersection_&_Crossing_Distance"></a>
 ## Nearest Intersection & Crossing 
 Distances between crossings to their closest roadway intersection and crossing
 are calculated by first identifying the nearest intersection/crossing to each
-HRGC and then measuring the distance between the HRGC and the intersection/Crossing [[Fig. 2](#Fig.2)]. To estimate these distances GIS network analysis conducted by using the [ArcGIS Network Analyst extension](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/what-is-network-analyst-.htm).
+HRGC and then measuring the distance between the HRGC and the intersection/Crossing [[Fig. 2](#Fig.2)]. To estimate these distances, GIS network analysis conducted by using the [ArcGIS Network Analyst extension](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/what-is-network-analyst-.htm).
 
 <a name="Fig.2"></a>
 Figure 2: Finding the nearest road intersection and crossing along road and railroad <a name="Fig.2"></a>
-[<img src="/images/IIFig2.jpg" alt="drawing" width="700"/>](/images/IIFig2.jpg)
+[<img src="/images/IIFig2.jpg" alt="drawing" title="Klick to see Larger scale!" width="700"/>](/images/IIFig2.jpg)
+
+<a name="Smallest_Crossing_Angle"></a>
+## Smallest Crossing Angle
+Crossing angle is one of the main factors impacting sight distance at a
+crossing is its highway-railway angle.However, the national HRGC inventory data only report categorical
+values for this variable.The calculation of acute crossing angles for
+all crossings is described in [Fig.3](#Fig.3). It involves three steps: 1) create a
+one-meter buffer around a crossing, 2) calculate the geo-coordinates of
+road/rail intersections within the buffer, and 3) calculate the acute
+angle based on all the coordinates. Acute angle is calculated based on
+[Eq.1](#E1).
+
+<a name="Fig.3"></a>
+Figure 3: Crossing angle geometric factor measurements at HRGC. 
+[<img src="/images/angdraw.png" alt="drawing" title="Klick to see Larger scale!" width="440"/>](/images/angdraw.png)<img src="/images/Degree_Zoom.png" alt="drawing" width="270"/>
 
 
+### Equation 1: Estimating Crossing Angle <a name="E1"></a>
+<img src="/images/Eq.jpg" alt="drawing" width="400"/> 
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.    
+* Where:
+* d<sub>x</sub>  is difference between x-coordinates of crossing and buffer intersection with railway
+* d<sub>y</sub> is difference between y-coordinates of crossing and buffer intersection with railway
+*	d<sup>a</sup><sub>x</sub> is difference between x-coordinates of crossing and buffer intersection with roadway
+* d<sup>a</sup><sub>y</sub>  is difference between y-coordinates of crossing and buffer intersection with roadway
+* r and r<sub>a</sub> are distances between crossing to railway-buffer and roadway-buffer intersections, respectively
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.</p>
-> — <cite>Rob Pike[^1]</cite>
-
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
-| ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
-
-## Code Blocks
-
-#### Code block with backticks
-
-```
-html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
-#### Code block indented with four spaces
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
-#### Code block with Hugo's internal highlight shortcode
+##### 3,194 crossings' smallest angle were estimated through following python code based on [Eq.1](#E1) & [Fig.3](#Fig.3): 
 {{< highlight html >}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
+dx = !x1!-!x0!
+dy = !y1!-!y0!
+dxa = !x1a!-!x0a!
+dya = !y1a!-!y0a!
+r = math.sqrt(math.pow(dx,2) + math.pow(dy,2))
+ra = math.sqrt(math.pow(dxa,2) + math.pow(dya,2))
+Theta = math.asin(abs((dx*dya - dy*dxa))/(r*ra)) / math.pi * 180
 {{< /highlight >}}
 
-## List Types
+<a name="Computational_Results"></a>
+## Computational Results
+In the following section, we focus on the four geometric factors to
+perform the cumulative probability analysis. To estimate marginal cumulative
+probabilities for each geometric factor in 2018, the cumulative
+probability of a target variable is estimated at a specific value while
+all the other contributors are controlled at a fixed level, mode value.
+The value range for each target geometric factor is selected from the
+actual data used in this research. Distance between a crossing and the
+nearest intersection ranges from 0 to 3,000 m (0–9,842 feet). Crossing
+angle ranges from 1 to 90°. Number of roadway lanes ranges from 1 to
+4. And number of main tracks ranges from 1 to 3. Each estimated cumulative
+probability and trends for each target contributor are displayed
+in [Fig.4](#Fig.4).
 
-#### Ordered List
+<a name="Fig.4"></a>
+Figure 3: Cumulative crash/severity probabilities in 2018 for the four geometric contributors. 
+[<img src="/images/a.png" alt="drawing" title="Crossing to Intersection Distance (Klick to see larger plot!)" width="360"/>](/images/a.png) [<img src="/images/b.png" alt="drawing" title="Crossing Angle (Klick to see larger plot!)" width="360"/>](/images/b.png) [<img src="/images/c.png" alt="drawing" title="Klick to see Larger scale!" width="360"/>](/images/c.png) [<img src="/images/d.png" alt="drawing" title="Klick to see Larger scale!" width="360"/>](/images/d.png)
 
-1. First item
-2. Second item
-3. Third item
 
-#### Unordered List
-
-* List item
-* Another item
-* And another item
-    * sadfasdf
-
-#### Nested list
-
-* Item
-1. First Sub-item
-2. Second Sub-item
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 

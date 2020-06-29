@@ -7,46 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2020, Amin keramati</copyright>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>privacy</title>
-      <link>/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>/tags/markdown/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>text</title>
-      <link>/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/text/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>emoji</title>
@@ -54,33 +18,6 @@
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/emoji/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/regression/</guid>
       <description></description>
     </item>
     
@@ -108,15 +45,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/index/</guid>
       <description></description>
     </item>
     

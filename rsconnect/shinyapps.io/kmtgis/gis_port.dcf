@@ -1,0 +1,10 @@
+name: gis_port
+title:
+username:
+account: kmtgis
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2509753
+bundleId: 3323954
+url: https://kmtgis.shinyapps.io/gis_port/
+when: 1593291972.84363

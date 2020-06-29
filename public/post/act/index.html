@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Transportation GIS Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="Act" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/post/act/" />
+    <meta itemprop="name" content="Act">
+    <meta itemprop="description" content="">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Act"/>
+    <meta name="twitter:description" content=""/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+
+    
+    <link rel="stylesheet" href="/scss/style.min.7d924ef9774ec20834568e42ea359840e26958ba74814c521b70b3cb5161c0bf.css" >
+</head>
+<body>
+    <header>
+    <div class="header header-frame">
+        <div>
+          
+            <h1 class="header__title">Act</h1>
+          
+            
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav-list header-nav-list--menu">
+                
+                
+                    
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-list__link" href="/about/">
+                                
+                                <span>About me</span>
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-list__link" href="/tags/">
+                                
+                                <span>tags</span>
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+            <button class="header-nav-list__nav-btn">navigation</button>
+        </nav>
+        <button class="mb-header__menu-btn">
+            <span class="mb-header__menu-btn-line"></span>
+            <span class="mb-header__menu-btn-line"></span>
+            <span class="mb-header__menu-btn-line"></span>
+        </button>
+    </div>
+    <nav id="mobile-header-nav" class="mb-header-nav">
+  
+  
+  <button class="mb-header-nav__close-btn flex-center">
+    <svg
+            class="mb-header-nav__svg-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+            >
+            <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+            <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+    </button>
+    
+    <div class="mb-header-nav__wrapper">
+        <div class="mb-header-nav__container">
+            <svg
+                width="240"
+                height="72"
+                viewBox="0 0 240 72"
+                class="mb-header-nav__title"
+                >
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                Tags
+                </text>
+            </svg>
+            <ul class="mb-header-nav-list">
+                
+                    
+                
+            </ul>
+        </div>
+        <div class="mb-header-nav__container">
+            <svg
+                width="240"
+                height="72"
+                viewBox="0 0 240 72"
+                class="mb-header-nav__title"
+                >
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                Menu
+                </text>
+            </svg>
+            <ul class="mb-header-nav-list">
+                
+                
+                    
+                      <li class="mb-header-nav-list__item ">
+                            <a class="mb-header-nav-list__link" href="/about/">
+                                About me
+                            </a>
+                        </li>
+                    
+                
+                    
+                      <li class="mb-header-nav-list__item ">
+                            <a class="mb-header-nav-list__link" href="/tags/">
+                                tags
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</header>
+
+
+
+    <div id="content">
+<article class="post">
+  
+    <div class="post-content">
+
+
+<p>This R Markdown document is made interactive using Shiny. Unlike the more traditional workflow of creating static reports, you can now create documents that allow your readers to change the assumptions underlying your analysis and see the results immediately.</p>
+<p>To learn more, see <a href="http://rmarkdown.rstudio.com/authoring_shiny.html">Interactive Documents</a>.</p>
+<div id="section-inputs-and-outputs" class="section level2">
+<h2>Inputs and Outputs</h2>
+<p>You can embed Shiny inputs and outputs in your document. Outputs are automatically updated whenever inputs change. This demonstrates how a standard R plot can be made interactive by wrapping it in the Shiny <code>renderPlot</code> function. The <code>selectInput</code> and <code>sliderInput</code> functions create the input widgets used to drive the plot.</p>
+</div>
+<div id="section-embedded-application" class="section level2">
+<h2>Embedded Application</h2>
+<p>It's also possible to embed an entire Shiny application within an R Markdown document using the <code>shinyAppDir</code> function. This example embeds a Shiny application located in another directory:</p>
+<pre class="r"><code>require(shiny)</code></pre>
+<pre><code>## Loading required package: shiny</code></pre>
+<pre class="r"><code>library(shiny)
+require(miniUI)</code></pre>
+<pre><code>## Loading required package: miniUI</code></pre>
+<pre class="r"><code>shinyAppDir(
+  system.file(&quot;examples/06_tabsets&quot;, package = &quot;shiny&quot;),
+  options = list(
+    width = &quot;100%&quot;, height = 550
+  )
+)</code></pre>
+<iframe data-deferred-src="appc12be7eee84b61c972ded4bdbe87ec98/?w=&amp;__subapp__=1" width="100%" height="550" class="shiny-frame shiny-frame-deferred"></iframe>
+<p>Note the use of the <code>height</code> parameter to determine how much vertical space the embedded application should occupy.</p>
+<p>You can also use the <code>shinyApp</code> function to define an application inline rather then in an external directory.</p>
+<p>In all of R code chunks above the <code>echo = FALSE</code> attribute is used. This is to prevent the R code within the chunk from rendering in the document alongside the Shiny components.</p>
+</div>
+</div>
+  
+</article>
+<button class="floating-button">
+    <a class="floating-button__link" href="/">
+        <span>home</span>
+    </a>
+</button>
+
+
+
+
+    </div>
+    
+    <footer class="post-footer">
+    <div class="footer">
+        
+            <div>© 2020, Amin keramati</div>
+        
+        <div class="footer__socials">
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+
+    
+    
+      
+<script src="/js/script.js"></script>
+
+    
+  </body>
+</html>
