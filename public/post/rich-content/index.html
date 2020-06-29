@@ -4,17 +4,17 @@
     <title>Transportation GIS Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs under the impact of different forest road maintenance policies:A case study of Oregon" />
+    <meta name="description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs" />
 
-    <meta property="og:title" content="Log-Truck Routing Analysis" />
-    <meta property="og:description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs under the impact of different forest road maintenance policies:A case study of Oregon" />
+    <meta property="og:title" content="Log-Truck Transportation Analysis" />
+    <meta property="og:description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/post/rich-content/" />
-    <meta itemprop="name" content="Log-Truck Routing Analysis">
-    <meta itemprop="description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs under the impact of different forest road maintenance policies:A case study of Oregon">
+    <meta itemprop="name" content="Log-Truck Transportation Analysis">
+    <meta itemprop="description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs">
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Log-Truck Routing Analysis"/>
-    <meta name="twitter:description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs under the impact of different forest road maintenance policies:A case study of Oregon"/>
+    <meta name="twitter:title" content="Log-Truck Transportation Analysis"/>
+    <meta name="twitter:description" content="Investigating transportation cost, log truck routing and carbon emissions trade-offs"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -27,10 +27,10 @@
     <div class="header header-frame">
         <div>
           
-            <h1 class="header__title">Log-Truck Routing Analysis</h1>
+            <h1 class="header__title">Log-Truck Transportation Analysis</h1>
           
             
-                <div class="header__description">Investigating transportation cost, log truck routing and carbon emissions trade-offs under the impact of different forest road maintenance policies:A case study of Oregon</div>
+                <div class="header__description">Investigating transportation cost, log truck routing and carbon emissions trade-offs</div>
             
         </div>
         <nav class="header-nav">
@@ -142,7 +142,52 @@
     <div id="content">
 <article class="post">
   
-    <div class="post-content--nopost">Author leaves no content for this post :( </div>
+    <div class="post-content"><h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+<li><a href="#Project_Abstract1">Project Abstract</a></li>
+<li><a href="#Data_and_Methodology">Data and Methodology</a>
+<h5 id="21-study-area-step-astudy_area">2.1. <a href="#Study_area">Study area (Step a)</a></h5>
+</li>
+</ol>
+<p><a name="Project_Abstract1"></a></p>
+<h2 id="project-abstract">Project Abstract</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">Wood transportation costs have significant impacts on timber investment returns. 
+To optimize transportation costs, a practical design of the route network is 
+necessary for log-trucks that ship wood material from timberlands to wood mills. 
+Road conditions resulting from various road maintenance policies dramatically 
+affect speed limits, log truck route networks, and transportation costs. 
+By considering forest-road maintenance policies, this study intends to provide 
+accurate information on timber-processing service coverage and log truck route 
+selections for forest companies or subcontracted fleets of log trucks. 
+This research also conducts the environmental analysis to assess the effects of
+various road maintenance policies on consumed energy and greenhouse gas emissions of 
+log trucks. With current maintenance policies, the results indicate that only between
+33% and 51% of timber areas in Oregon can be accessed or harvested by existing nearby
+wood mills. However, with the proposed road maintenance policy in this paper, 
+accessibility to timberlands increases by up 18 to 104%. The cost of log 
+transportation also decreases by 16% to 34%.</code></pre></div>
+<p><a name="Data_and_Methodology"></a></p>
+<h2 id="data-and-methodology">Data and Methodology</h2>
+<p>This section introduces data resources used for GIS analysis. It also explains the research framework developed to assess the effects of road maintenance policies. The data classification, quantification, and analysis were subdivided into seven steps <a href="#Fig.1">Fig. 1</a>:</p>
+<ul>
+<li>A) Quantify the study area including forest area and a complete transportation network.</li>
+<li>b) Quantify and classify the main network analysis elements including a complete transportation network, timber area, and wood mill locations according to geometric parameters.</li>
+<li>c) Classify the methodology based on three scenarios.</li>
+<li>d) Select and then quantify routes based on geospatial analysis, including optimized route selection, route travel time, travel distance, and service coverage calculations.</li>
+<li>e) Conduct travel time analysis for three scenarios. * Conduct total transportation cost analysis for three scenarios including both user costs and agency costs.</li>
+<li>f) Conduct energy consumption and environmental impact analysis for three scenarios.</li>
+</ul>
+<p>In the following, I will explain just couple of above steps and GIS-related works. Please refere to our publication <a href="https://ascelibrary.org/doi/abs/10.1061/JTEPBS.0000335">here</a> fot details.</p>
+<p><a name="Fig.1"></a>
+Figure 1: The Research Steps Flow Chart. <a name="Fig.1"></a>
+<a href="/images/Figure1.png"><img src="/images/Figure1.png" alt="drawing" title="Klick to see Larger scale!" width="500"/></a></p>
+<p><a name="Study_area"></a></p>
+<h3 id="study-area-step-a">Study area (Step a):</h3>
+<p>The state of Oregon is the case study considered in this paper because of its large logging industry, huge forested areas, and extensive network of forest roads. The authors first filtered timber (harvesting) areas out from the overall 30 million acres of forests, resulting in 3.3 million acres of timber areas which is explained in more detail in the next section. In this study, 189 Oregon wood mills are considered. The road network between timberlands and wood mills include about 8,987.51 miles of highways including total state highway system miles, interstate miles, and some other state mileage such as state forests miles, and 408,007 miles of forest roads. This road network was generated by merging the Oregon highway and forest road networks in the next step <a href="#Fig.2">Fig. 2</a>.</p>
+<p><a name="Fig.2"></a>
+Figure 2: Oregon GIS Online basemap and Transportation Network GIS Layer . <a name="Fig.2"></a>
+<a href="/images/Figure2_2.png"><img src="/images/Figure2.png" alt="drawing" title="Klick to see Transportation Network Map!" width="700"/></a></p>
+</div>
   
 </article>
 <button class="floating-button">
