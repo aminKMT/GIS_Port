@@ -21,7 +21,7 @@ title: Highway-Rail Grade Crossing Safety
 4. [Smallest Crossing Angle](#Smallest_Crossing_Angle)
 5. [Computational Results](#Computational_Results)
 6. [HRGC Geometric Effect Calculator](https://kmtgis.shinyapps.io/ak_plot/)
-7. [Related Publication](https://doi.org/10.1016/j.aap.2020.105470)
+7. [Related Publication](https://doi.org/10.1016/j.aap.2020.105470) 
 
 <a name="Project_Abstract"></a>
 ## Project Abstract 
