@@ -4,17 +4,17 @@
     <title>Transportation GIS Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Guide to emoji usage in Hugo" />
+    <meta name="description" content="Executed python script to allow map-matching of bike GPS points to a network in “ArcPy”." />
 
-    <meta property="og:title" content="Emoji Support" />
-    <meta property="og:description" content="Guide to emoji usage in Hugo" />
+    <meta property="og:title" content="Bike Route Choice Modeling Analysis" />
+    <meta property="og:description" content="Executed python script to allow map-matching of bike GPS points to a network in “ArcPy”." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/post/emoji-support/" />
-    <meta itemprop="name" content="Emoji Support">
-    <meta itemprop="description" content="Guide to emoji usage in Hugo">
+    <meta itemprop="name" content="Bike Route Choice Modeling Analysis">
+    <meta itemprop="description" content="Executed python script to allow map-matching of bike GPS points to a network in “ArcPy”.">
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Emoji Support"/>
-    <meta name="twitter:description" content="Guide to emoji usage in Hugo"/>
+    <meta name="twitter:title" content="Bike Route Choice Modeling Analysis"/>
+    <meta name="twitter:description" content="Executed python script to allow map-matching of bike GPS points to a network in “ArcPy”."/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -27,10 +27,10 @@
     <div class="header header-frame">
         <div>
           
-            <h1 class="header__title">Emoji Support</h1>
+            <h1 class="header__title">Bike Route Choice Modeling Analysis</h1>
           
             
-                <div class="header__description">Guide to emoji usage in Hugo</div>
+                <div class="header__description">Executed python script to allow map-matching of bike GPS points to a network in “ArcPy”.</div>
             
         </div>
         <nav class="header-nav">
@@ -97,14 +97,6 @@
             <ul class="mb-header-nav-list">
                 
                     
-                        
-                          <li class="mb-header-nav-list__item ">
-                        <a class="mb-header-nav-list__link" href="/tags/emoji/"
-                                                            >emoji</a
-                                                        >
-                    </li>
-                        
-                    
                 
             </ul>
         </div>
@@ -150,31 +142,99 @@
     <div id="content">
 <article class="post">
   
-    <div class="post-content"><p>Emoji can be enabled in a Hugo project in a number of ways.</p>
-<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
-<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
-<p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
-<br>
-<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
-<hr>
-<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.emoji {
-font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
-}</code></pre></div>
+    <div class="post-content"><h1 id="table-of-contents">Table of Contents</h1>
+<ol>
+<li><a href="#Project_Abstract2">Project Abstract</a></li>
+<li><a href="#Data">Data</a></li>
+<li><a href="#Methodology">Methodology</a></li>
+</ol>
+<p><a name="Project_Abstract2"></a></p>
+<h2 id="project-abstract">Project Abstract</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">In this project, I executed several python scripts and GIS models to allow map-matching of 
+more than 14,000 bike GPS points to the Downtown Toronto street network. These data are 
+using as part of the project titled &#34;Bike route choice modeling analysis&#34;. </code></pre></div>
+<p><a name="Data"></a></p>
+<h2 id="data">Data</h2>
+<p>The GPS points in this project indicate several number of specific routes which are passed by several number of bike riders. However, GPS points can have deviation usually because of satellite or GPS coordinate recording devices errors. In the bike transportation network analysis, map-matching technics are used to match the sets of GPS points indicating the bike rider&rsquo;s route to the real route that bike rider passes on. In this project the transportation network is Downtown Toronto street network <a href="#Fig.1">Fig.1(a)</a>, and 14,000 GPS points are recorded <a href="#Fig.1">Fig.1(b)</a>. As can be seen in <a href="#Fig.2">Fig.2</a>, GPS points attribute table has information like &ldquo;START_AT&rdquo;, &ldquo;END_AT&rdquo;, and TRIP_ID. START and END At indicates the GPS points recording time and TRIP_ID indicates the specific route that a set of GPS points indicates. In order to match the path with each set of GPS point, I first made a model to separate sets of point in to the separate point shapefile based on their TRIP_ID. The results were 4,389 GPS points set with unique TRIP_ID which indicats there are 4,389 routes to match. <a href="#Fig.3">Fig.3</a> indicates the separated GPS points set in Arc Catalog.</p>
+<p><a name="Fig.1"></a>
+Figure 1: Downtown Toronto Street Network and GPS Points. 
+<a href="/images/Tnet.png"><img src="/images/Tnet.png" alt="drawing" title="a" width="340
+"/></a> <a href="/images/Tpoint.png"><img src="/images/Tpoint.png" alt="drawing" title="b" width="340"/></a></p>
+<p><a name="Fig.2"></a>
+Figure 2: Attribute Table of GPS Points.
+<img src="/images/TP.jpg" alt="drawing"  width="680"/></p>
+<p><a name="Fig.3"></a></p>
+<h4 id="figure-3-separated-gps-points-sets-in-arc-catalog">Figure 3: Separated GPS Points Sets in Arc Catalog.</h4>
+<img src="/images/Bike2.jpg" alt="drawing"  width="310"/>
+<p><a name="Methodology"></a></p>
+<h2 id="methodology">Methodology</h2>
+<p>A <a href="https://github.com/simonscheider/mapmatching">python script</a> is provided to allow <a href="https://en.wikipedia.org/wiki/Map_matching">map-matching</a> (matching of track points to a network)  in arcpy using a Hidden Markov model with probabilities parameterized based on spatial and network distances. the following code block indicates the first part of mapMatch function python code:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">mapMatch</span>(track, segments, decayconstantNet <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">25</span>, decayConstantEu <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>, maxDist <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">50</span>, addfullpath <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">True</span>):
+</code></pre></div><p>The main method is based on the <a href="https://en.wikipedia.org/wiki/Viterbi_algorithm">Viterbi algorithm for Hidden Markov models</a>. It gets trackpoints and segments, and returns the most probable segment path (a list of segments) for the list of points.</p>
+<ul>
+<li>Inputs:</li>
+<li>param track = a shape file (filename) representing a track, can also be unprojected (WGS84)</li>
+<li>param segments = a shape file of network segments, should be projected (in meter) to compute Euclidean distances properly (e.g. GCS Amersfoord)</li>
+<li>param decayconstantNet (optional) = the network distance (in meter) after which the match probability falls under 0.34 (exponential decay). (note this is the inverse of lambda). This depends on the point frequency of the track (how far are track points separated?)</li>
+<li>param decayConstantEu (optional) = the Euclidean distance (in meter) after which the match probability falls under 0.34 (exponential decay). (note this is the inverse of lambda). This depends on the positional error of the track points (how far can points deviate from their true position?)</li>
+<li>param maxDist (optional) = the Euclidean distance threshold (in meter) for taking into account segments candidates.</li>
+<li>param addfullpath (optional, True or False) = whether a contiguous full segment path should be outputted. If not, a 1-to-1 list of segments matching each track point is outputted.
+note: depending on the type of movement, optional parameters need to be fine tuned to get optimal results.</li>
+</ul>
+<p>the next plock code indicates the pythin code to match a route to each set of GPS point. Based on the following code, To use the above mapmatch function to match the path to each set of GPS points, firts all of the GPS point shape files are sorted based on their start time recorde or column &ldquo;START_AT&rdquo; to match the route according to the bike movement direction. in th enext step, through for loop, all GPS point sets are matched with a route which is a polyline with the same TRIP_ID of matched set of points. At the end with &ldquo;arcpy.Merge_management()&rdquo; all polyline merged in to gether to have an integrated dataset. In <a href="">Fig.4</a>, the green GPS points are matched with the grean route based the above python code.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">    arcpy<span style="color:#000;font-weight:bold">.</span>env<span style="color:#000;font-weight:bold">.</span>workspace <span style="color:#000;font-weight:bold">=</span> your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminSHP4&#39;</span>
+    points3<span style="color:#000;font-weight:bold">=</span>arcpy<span style="color:#000;font-weight:bold">.</span>ListFeatureClasses()
+    <span style="color:#000;font-weight:bold">for</span> Trksrt <span style="color:#000;font-weight:bold">in</span> points3:
+        arcpy<span style="color:#000;font-weight:bold">.</span>Sort_management(Trksrt,your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp2&#39;</span><span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;</span><span style="color:#d14">\\</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>(Trksrt),<span style="color:#d14">&#34;end_at&#34;</span>)
+        <span style="color:#998;font-style:italic"># Process: Point_ID</span>
+        arcpy<span style="color:#000;font-weight:bold">.</span>AddField_management(your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp2&#39;</span><span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;</span><span style="color:#d14">\\</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>(Trksrt), <span style="color:#d14">&#34;Point_ID&#34;</span>, <span style="color:#d14">&#34;DOUBLE&#34;</span>, <span style="color:#d14">&#34;10&#34;</span>, <span style="color:#d14">&#34;10&#34;</span>, <span style="color:#d14">&#34;&#34;</span>, <span style="color:#d14">&#34;&#34;</span>, <span style="color:#d14">&#34;NULLABLE&#34;</span>, <span style="color:#d14">&#34;NON_REQUIRED&#34;</span>, <span style="color:#d14">&#34;&#34;</span>)
+        <span style="color:#998;font-style:italic"># Process: CAl_point_ID</span>
+        arcpy<span style="color:#000;font-weight:bold">.</span>CalculateField_management(your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp2&#39;</span><span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;</span><span style="color:#d14">\\</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>(Trksrt), <span style="color:#d14">&#34;Point_ID&#34;</span>, <span style="color:#d14">&#34;!FID!&#34;</span>, <span style="color:#d14">&#34;PYTHON_9.3&#34;</span>, <span style="color:#d14">&#34;&#34;</span>)
+        
+arcpy<span style="color:#000;font-weight:bold">.</span>env<span style="color:#000;font-weight:bold">.</span>workspace <span style="color:#000;font-weight:bold">=</span> your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp2&#39;</span>
+roadname<span style="color:#000;font-weight:bold">=</span> your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp</span><span style="color:#d14">\\</span><span style="color:#d14">Net_F.shp&#39;</span>
+roadname2 <span style="color:#000;font-weight:bold">=</span>your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp</span><span style="color:#d14">\\</span><span style="color:#d14">&#39;</span>
+points<span style="color:#000;font-weight:bold">=</span>arcpy<span style="color:#000;font-weight:bold">.</span>ListFeatureClasses()
+pp<span style="color:#000;font-weight:bold">=</span> arcpy<span style="color:#000;font-weight:bold">.</span>ListFeatureClasses(<span style="color:#d14">&#34;*&#34;</span>,<span style="color:#d14">&#34;point&#34;</span>,<span style="color:#d14">&#34;&#34;</span>)
+out_points<span style="color:#000;font-weight:bold">=</span>your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">Amin_Improved</span><span style="color:#d14">\\</span><span style="color:#d14">&#39;</span>       
 
-<style>
-.emojify {
-	font-family: Apple Color Emoji,Segoe UI Emoji,NotoColorEmoji,Segoe UI Symbol,Android Emoji,EmojiSymbols;
-	font-size: 2rem;
-	vertical-align: middle;
-}
-@media screen and (max-width:650px) {
-    .nowrap {
-	display: block;
-	margin: 25px 0;
-}
-}
-</style></div>
+file_name_field <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Trip_ID2&#39;</span>
+<span style="color:#000;font-weight:bold">for</span> trackname <span style="color:#000;font-weight:bold">in</span> pp:
+        arcpy<span style="color:#000;font-weight:bold">.</span>Statistics_analysis(trackname,out_points<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#34;c_&#34;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>( <span style="color:#0086b3">int</span>(<span style="color:#0086b3">filter</span>(<span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>isdigit, <span style="color:#0086b3">str</span>(trackname)))), <span style="color:#d14">&#34;FID count&#34;</span>, <span style="color:#d14">&#34;&#34;</span>)
+        cursor <span style="color:#000;font-weight:bold">=</span> arcpy<span style="color:#000;font-weight:bold">.</span>da<span style="color:#000;font-weight:bold">.</span>SearchCursor(out_points<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#34;c_&#34;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>( <span style="color:#0086b3">int</span>(<span style="color:#0086b3">filter</span>(<span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>isdigit, <span style="color:#0086b3">str</span>(trackname)))), [<span style="color:#d14">&#39;COUNT_FID&#39;</span>])
+        <span style="color:#000;font-weight:bold">for</span> row <span style="color:#000;font-weight:bold">in</span> cursor:
+             point_Size<span style="color:#000;font-weight:bold">=</span><span style="color:#0086b3">str</span>(row)
+             <span style="color:#998;font-style:italic">#print int(filter(str.isdigit, str(point_Size)))  </span>
+          
+             <span style="color:#000;font-weight:bold">if</span>  <span style="color:#0086b3">int</span>(<span style="color:#0086b3">filter</span>(<span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>isdigit, <span style="color:#0086b3">str</span>(point_Size))) <span style="color:#000;font-weight:bold">&gt;</span><span style="color:#099">2</span>:
+               arcpy<span style="color:#000;font-weight:bold">.</span>Copy_management(trackname, your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">badFiles</span><span style="color:#d14">\\</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>( <span style="color:#0086b3">int</span>(<span style="color:#0086b3">filter</span>(<span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>isdigit, <span style="color:#0086b3">str</span>(trackname))))<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;.shp&#39;</span>, <span style="color:#d14">&#34;ShapeFile&#34;</span>)  
+               arcpy<span style="color:#000;font-weight:bold">.</span>Delete_management(trackname,<span style="color:#d14">&#34;ShapeFile&#34;</span>)
+               arcpy<span style="color:#000;font-weight:bold">.</span>Delete_management(out_points<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#34;c_&#34;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>( <span style="color:#0086b3">int</span>(<span style="color:#0086b3">filter</span>(<span style="color:#0086b3">str</span><span style="color:#000;font-weight:bold">.</span>isdigit, <span style="color:#0086b3">str</span>(trackname)))),<span style="color:#d14">&#34;ArcInfoTable&#34;</span>) 
+             <span style="color:#000;font-weight:bold">else</span>:
+               a<span style="color:#000;font-weight:bold">=</span><span style="color:#099">900</span>
+               b<span style="color:#000;font-weight:bold">=</span><span style="color:#099">50</span>
+               c<span style="color:#000;font-weight:bold">=</span><span style="color:#099">700</span>       
+               opt <span style="color:#000;font-weight:bold">=</span> mapMatch(trackname, roadname, a,b,c)
+               exportPath(opt,trackname)
+               arcpy<span style="color:#000;font-weight:bold">.</span>env<span style="color:#000;font-weight:bold">.</span>workspace <span style="color:#000;font-weight:bold">=</span> your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp2&#39;</span>
+               points2<span style="color:#000;font-weight:bold">=</span>arcpy<span style="color:#000;font-weight:bold">.</span>ListFeatureClasses()
+               <span style="color:#000;font-weight:bold">for</span> trackname <span style="color:#000;font-weight:bold">in</span> points2:
+                  <span style="color:#998;font-style:italic">#print(trackname) # just so you know what the script is processing</span>
+                  existing_fields <span style="color:#000;font-weight:bold">=</span> [f<span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">for</span> f <span style="color:#000;font-weight:bold">in</span> arcpy<span style="color:#000;font-weight:bold">.</span>ListFields(trackname)]
+                  <span style="color:#000;font-weight:bold">if</span> file_name_field <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> existing_fields:
+                    arcpy<span style="color:#000;font-weight:bold">.</span>management<span style="color:#000;font-weight:bold">.</span>AddField(trackname, file_name_field, <span style="color:#d14">&#39;text&#39;</span>, field_length<span style="color:#000;font-weight:bold">=</span><span style="color:#099">200</span>)
+                  <span style="color:#000;font-weight:bold">with</span> arcpy<span style="color:#000;font-weight:bold">.</span>da<span style="color:#000;font-weight:bold">.</span>UpdateCursor(trackname, [file_name_field]) <span style="color:#000;font-weight:bold">as</span> uc:
+                      <span style="color:#000;font-weight:bold">for</span> row <span style="color:#000;font-weight:bold">in</span> uc:
+                          uc<span style="color:#000;font-weight:bold">.</span>updateRow([<span style="color:#0086b3">str</span>(trackname)])
+                  <span style="color:#000;font-weight:bold">del</span> row, uc
+arcpy<span style="color:#000;font-weight:bold">.</span>env<span style="color:#000;font-weight:bold">.</span>workspace <span style="color:#000;font-weight:bold">=</span> your_path<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;tPRROMTO</span><span style="color:#d14">\\</span><span style="color:#d14">AminShp24&#39;</span>
+lines<span style="color:#000;font-weight:bold">=</span>arcpy<span style="color:#000;font-weight:bold">.</span>ListFeatureClasses()
+arcpy<span style="color:#000;font-weight:bold">.</span>Merge_management(lines, <span style="color:#d14">&#34;Merged_Paths.shp&#34;</span>)
+</code></pre></div><p>The another estimation in this project is estimating the shortest path between origin and destination of each bike rider or set of GPS points. Estimating the shortest of each set of GPS point is considerably similar to do the mapMatch the all points; the only different is that instead of considering all points in each set of GPS points (based on TRIP_ID), I considered the start point and the end point of each set. In other words, mapMatch function match a route between just two points, the start point (point with minimum of START_AT) and the end point (point with maximum of START_AT). The reason is that the Hidden Markov model try to find the shortest path between each pair of points, so the shortest path of each bike rider can be estimated by just considering the start and the end point of each GPS points set. The red polyline in <a href="#Fig.4">Fig.4</a> indicates the shortest path between the start point and end the point of the green GPS points set.</p>
+<p><a name="Fig.4"></a>
+Figure 4: An Example of Matched Route and Shortest Path. 
+<a href="/images/Short_Long.png"><img src="/images/Short_Long.png" alt="drawing" title="Fullscreen" width="500"/></a></p>
+</div>
   
 </article>
 <button class="floating-button">

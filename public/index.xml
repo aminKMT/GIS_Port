@@ -18,7 +18,7 @@
       <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/markdown-syntax/</guid>
-      <description>Table of Contents  Project Abstract Map Digitizing Nearest Intersection &amp;amp; Crossing Smallest Crossing Angle Computational Results HRGC Geometric Effect Calculator Related Publication  
+      <description>Table of Contents  Project Abstract Map Digitizing Nearest Intersection &amp;amp; Crossing Smallest Crossing Angle Computational Results HRGC Geometric Effect Calculator Related Publication   
 Project Abstract Highway-rail grade crossings (HRGCs) are where a roadway and railway intersect at the same level.Safety at HRGCs has been identified as a high-priority concern among transportation agencies, but there has been little research on the effects of HRGC geometric parameters on their safety performance.</description>
     </item>
     
@@ -28,17 +28,19 @@ Project Abstract Highway-rail grade crossings (HRGCs) are where a roadway and ra
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/rich-content/</guid>
-      <description>Table of Contents  Project Abstract Data and Methodology 2.1. Study area (Step a) 2.2. GIS database (Step b) 2.3. Road Maintenance Scenarios (Step c) 2.4. Road Network Analysis (Step d)  Related Publication  
+      <description>Table of Contents  Project Abstract Data and Methodology 2.1. Study area (Step a) 2.2. GIS database (Step b) 2.3. Road Maintenance Scenarios (Step c) 2.4. Road Network Analysis (Step d)  Related Publication   
 Project Abstract Wood transportation costs have significant impacts on timber investment returns. To optimize transportation costs, a practical design of the route network is necessary for log-trucks that ship wood material from timberlands to wood mills.</description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
+      <title>Bike Route Choice Modeling Analysis</title>
       <link>/post/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <description>Table of Contents  Project Abstract Data Methodology  
+Project Abstract In this project, I executed several python scripts and GIS models to allow map-matching of more than 14,000 bike GPS points to the Downtown Toronto street network. These data are using as part of the project titled &amp;#34;Bike route choice modeling analysis&amp;#34;.  
+Data The GPS points in this project indicate several number of specific routes which are passed by several number of bike riders.</description>
     </item>
     
     <item>

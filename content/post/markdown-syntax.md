@@ -22,6 +22,7 @@ title: Highway-Rail Grade Crossing Safety
 5. [Computational Results](#Computational_Results)
 6. [HRGC Geometric Effect Calculator](https://kmtgis.shinyapps.io/ak_plot/)
 7. [Related Publication](https://doi.org/10.1016/j.aap.2020.105470) 
+***
 
 <a name="Project_Abstract"></a>
 ## Project Abstract 
@@ -131,7 +132,7 @@ probability and trends for each target contributor are displayed
 in [Fig.4](#Fig.4).
 
 <a name="Fig.4"></a>
-Figure 3: Cumulative crash/severity probabilities in 2018 for the four geometric contributors. 
+Figure 4: Cumulative crash/severity probabilities in 2018 for the four geometric contributors. 
 [<img src="/images/a.png" alt="drawing" title="Crossing to Intersection Distance (Klick to see larger plot!)" width="360"/>](/images/a.png) [<img src="/images/b.png" alt="drawing" title="Crossing Angle (Klick to see larger plot!)" width="360"/>](/images/b.png) [<img src="/images/c.png" alt="drawing" title="Klick to see Larger scale!" width="360"/>](/images/c.png) [<img src="/images/d.png" alt="drawing" title="Klick to see Larger scale!" width="360"/>](/images/d.png)
 
 

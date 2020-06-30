@@ -14,7 +14,7 @@ title: Log-Truck Transportation Analysis
     #####  2.3. [Road Maintenance Scenarios (Step c)](#main)
     #####  2.4. [Road Network Analysis (Step d)](#road)
 3. [Related Publication](https://ascelibrary.org/doi/abs/10.1061/JTEPBS.0000335)
-    
+***
  
 
 <a name="Project_Abstract1"></a>
