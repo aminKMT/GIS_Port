@@ -10,6 +10,11 @@ title: Log-Truck Transportation Analysis
 1. [Project Abstract](#Project_Abstract1)
 2. [Data and Methodology](#Data_and_Methodology)
     #####  2.1. [Study area (Step a)](#Study_area)
+    #####  2.2. [GIS database (Step b)](#GIS_database)
+    #####  2.3. [Road Maintenance Scenarios (Step c)](#main)
+    #####  2.4. [Road Network Analysis (Step d)](#road)
+3. [Related Publication](https://ascelibrary.org/doi/abs/10.1061/JTEPBS.0000335)
+    
  
 
 <a name="Project_Abstract1"></a>
@@ -55,5 +60,144 @@ The state of Oregon is the case study considered in this paper because of its la
 <a name="Fig.2"></a>
 Figure 2: Oregon GIS Online basemap and Transportation Network GIS Layer . <a name="Fig.2"></a>
 [<img src="/images/Figure2.png" alt="drawing" title="Klick to see Transportation Network Map!" width="700"/>](/images/Figure2_2.png)
+
+<a name="GIS_database"></a>
+### GIS database (Step b)
+In this study, several spatial databases including merged forest and highway road networks, and timberland areas including timber spots were used to complete GIS analysis and select routes with minimum travel time between timberlands and wood mills. Topographic maps, forest management maps, and timber locations were generated and analyzed in [ArcGIS10.1](https://www.esri.com/news/arcnews/spring12articles/introducing-arcgis-101.html). To collect required GIS data, boundaries and counties with the geographic coordinate system of “GCS North America 1983” were obtained from the [Oregon Spatial Data Library website]( http://spatialdata.oregonexplorer). The forest layer for the State of Oregon was obtained from the Forest Service, an agency of the [U.S. Department of Agriculture]( http://data.fs.usda.gov). This GIS layer provides valuable data and information regarding the usage of different forest areas in Oregon. There are total 30-million-acre forest and each area is assigned a function by the Forest Service to indicate if the forest area is allowed for timber cutting or not. Based on such information, about 3.3 million acres of area suitable for timber production, named harvesting areas, is identified for this study. In terms of wood mills, the authors collected data related to all western U.S. sawmills from the [USDA website]( http://www.srs.fs.usda.gov). These data specify mills that only purchase logs or chips. These mills exclude paper or any other wood products that require secondary processing or rely entirely on recycled fiber. The data on roads (forest roads and highways) that connect different forest areas and mills were collected from [national forest-system roads]( http://data.fs.usda.gov) and the [Oregon highway network.](https://catalog.data.gov/dataset)
+
+
+<a name="main"></a>
+### Road Maintenance Scenarios (Step c)
+The three
+maintenance policies in the research are based on the road maintenance
+classifications defined by USDA. Forest roads are classified
+into five categories based on USDA’s five maintenance levels,
+which reflect the road conditions:
+* Level 1 roads are inactivated and managed as stored or closed
+for more than 1 year.
+* Level 2 roads are suitable for high clearance vehicles and are not
+maintained for passenger cars.
+* Level 3 roads are maintained for passenger cars. Roads are
+typically low speed and single lane.
+* Level 4 roads are maintained for passenger cars and provide a
+moderate degree of user comfort and convenience. Roads are
+double lane and aggregate surfaced.
+* Level 5 roads are maintained for passenger cars and provide a
+high degree of user comfort and convenience. Roads are normally
+double lane.
+
+These scenarios were analyzed separately to (1) determine
+the routes that provide the shortest travel time between
+timberlands and wood mills, (2) estimate forest area service coverage,
+and (3) calculate log transportation costs and, finally, carbon
+emissions and fuel consumption of log trucks. The three maintenance
+scenarios (policies) are defined as follows:
+* Scenario 1: Operational maintenance policy. According to this
+scenario, all forest roads are maintained with respect to the current
+maintenance levels (OMLs) specified by the USDA.
+* Scenario 2: Objective maintenance policy. According to this
+scenario, all forest roads are maintained with respect to the desired
+level of maintenance (ObMLs) specified by the USDA.
+* Scenario 3: Rehabilitation policy. In this scenario, it is assumed
+that all forest road conditions were improved by maintenance and
+rehabilitations with respect to their OML and ObML. For instance,
+if the OML of a road is currently designated as being Level 2
+and USDA defined Level 3 as the road’s ObML, then Level 3 is
+considered to be the road condition improvement goal for the
+numerical analysis in this paper.
+
+<a name="road"></a>
+### Road Network Analysis (Step d)
+The final road network was scaled as 2.54 cm (1 in.) is equal to
+76.2 km (47.35 mi) on scaled topographic maps. The travel time
+of a log truck for each road section was estimated and added to the
+attribute table of the GIS road network database as a new field. The
+travel time for each road segment was computed based on road segment
+length and its assigned speed limit according to the section
+“Road Maintenance Scenarios and Speed Limits (Step c).”
+Network analysis is widely used in solving transportation problems
+that usually include various parameter values, such as length,
+cost, and travel time assigned to the network links. The optimal
+path (usually shortest) is selected by searching the route and minimizing
+the sum of the total link parameter values.
+To employ real-world transportation data, this paper considered
+one-way restrictions, turn restrictions, junction impedance, and
+side-of-street constraints while minimizing a user-specified cost
+attribute (travel time) for route networks. From different techniques
+available in estimating the shortest path, the new `closet facility method`, a `Network Analyst` extension of `ArcGIS tools`, was used for each scenario separately to estimate the fastest
+routes between wood mills and timber spots. The fastest route was
+calculated by ArcGIS network analysis based on `Dijkstra’s algorithm` Some road segments might be
+closed because their maintenance level is identified as Level 1.
+Hence, their associated links were hypothetically excluded from
+the network system by placing barriers on those links (bold lines
+in [Fig.3](#Fig.3) map extent).
+The service coverage for each road maintenance scenario
+(policy) is defined as the number of wood mills assigned to
+timber locations within each timber area (district). For instance,
+the zoomed area in [Fig.3](#Fig.3) shows that only 2.7% of all wood mills
+were assigned to the timber locations in the timber area named
+Chiloquin Ranger District. In this research, the authors assume that
+each wood mill can only serve one timber location or area, but one
+timber location can be served by multiple wood mills.
+
+<a name="Fig.3"></a>
+Figure 3: Routing solution of operational maintenance policy (Scenario I). Map generated using ArcGIS software. <a name="Fig.3"></a>
+[<img src="/images/Figure3.png" alt="drawing" title="Klick to see Transportation Network Map!" width="700"/>](/images/Figure3.png)
+
+[Fig.3](#Fig.3) illustrates the routing results (paths with shortest travel
+time) for the first road maintenance scenario (OML policy). The
+red lines in the smaller map demonstrate an example of closed forest
+roads (OML= 1) resulting from the operational maintenance policy.
+[Fig.3](#Fig.3) shows the routable network including both highway and forestry
+roads. The blue lines on the map are the resulting fastest routes
+connecting the nearest timber harvesting areas (green circle) to each
+wood mill (brown pentagon) under the first scenario. Note that a
+route with a thicker line has a longer travel time. The maximum
+travel time is about 987 min for travel between the Wild Rivers
+Ranger District and Rough and Ready Lumber Company. The average
+travel time of all routes with the shortest travel times in the first
+scenario (OML policy) is 96.70 min (Table 3). The size of the green
+circles indicates the number of mills supplied by each timber area.
+The timber area allocated to the maximum number of mills is the
+Clackamas River Ranger District with 42 assigned wood mills,
+which is about 23% of the total mills. Furthermore, on average,
+9.2 (4.86% of total mills) mills are supplied by each timber area,
+while 49% of harvesting areas are inaccessible to all of the wood
+mills.
+
+<a name="Fig.4"></a>
+Figure 4: Routing solution of objective maintenance policy (Scenario II). Map generated using ArcGIS software.
+[<img src="/images/Figure4.png" alt="drawing" title="Klick to see Larger Scale!" width="700"/>](/images/Figure4.png)
+
+[Fig.4](#Fig.4) and [Fig.5](#Fig.5) indicate the results for objective maintenance policy
+(Scenario 2) and rehabilitation policy (Scenario 3), respectively. The
+average travel time is 97.490 min for Scenario 2, which is about the
+same as Scenario 1. However, travel time is reduced to 65.893 min
+for Scenario 3. For each timber area, the average number of assigned
+service mills is 9.63 for Scenario 2, which is again about the same as 
+Scenario 1, which had 9.2 mills. However, the number of mills is reduced significantly to 6.93 for Scenario 3. Note that even though the average number of mills is about the
+same for Scenarios 1 and 2, the percentage of assigned mills can
+be dramatically different for a specific timber area. For instance,
+fewer mills (0.54% of mills) will be able to meet the demand for
+McKenzie River Ranger District under the first scenario. However,
+this percentage increased dramatically to 41.53% under the second
+scenario. This means that as neighboring mills become inaccessible
+to the district, more distant mills will be selected to partially meet
+the demands of the district. This is because more forest roads will be
+closed to traffic under the objective maintenance policy compared to operational maintenance policy, which will result in more mills being inaccessible from neighboring districts. Thus, mills far from
+the district have to be selected to serve the district. In total, 67% of
+timber harvest areas became inaccessible to wood mills under the
+second scenario compared to 49% in the first scenario.
+
+<a name="Fig.5"></a>
+Figure 5: Routing solution of rehabilitation policy (Scenario III). Map generated using ArcGIS software. 
+[<img src="/images/Figure5.png" alt="drawing" title="Klick to see Larger Scale!" width="700"/>](/images/Figure5.png)
+
+
+
+
+
+
+
 
 
