@@ -1,7 +1,7 @@
 baseURL = "/"
 title = "Transportation GIS Projects"
 author = "Amin Keramati"
-copyright = "© 2020, Amin keramati"
+copyright = "© 2020, Amin Keramati"
 paginate = 4
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -34,17 +34,18 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "About me"
     url = "/about/"
     weight = 10
+  [[menu.main]]
+    identifier = "pub"
+    name = "Publications"
+    url = "/web/pub/"
+    weight = 20
+  [[menu.main]]
+    identifier = "award"
+    name = "GIS Award"
+    url = "https://www.ugpti.org/about/news/viewarticle.php?id=192&program=mpc"
+    weight = 30
     
- [[menu.main]]
-    identifier = "tags"
-    name = "tags"
-    url = "/tags/"
-    weight = 10
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
+    
 
 [markup]
   [markup.highlight]

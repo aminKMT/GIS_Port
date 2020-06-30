@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Webs on Transportation GIS Projects</title>
-    <link>/web/</link>
-    <description>Recent content in Webs on Transportation GIS Projects</description>
+    <title>publications on Transportation GIS Projects</title>
+    <link>/tags/publications/</link>
+    <description>Recent content in publications on Transportation GIS Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2020, Amin Keramati</copyright>
     
-	<atom:link href="/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/publications/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

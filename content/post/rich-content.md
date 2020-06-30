@@ -1,7 +1,7 @@
 ---
-author: Hugo Authors
-date: "2019-06-20"
-description: Investigating transportation cost, log truck routing and carbon emissions trade-offs 
+author: Amin Keramati
+date: "2018-06-20"
+description: Investigating transportation cost, log truck routing and carbon emissions trade-offs. 
 imagelink: https://giskeramati.netlify.app/Cover2.jpg 
 tags: []
 title: Log-Truck Transportation Analysis

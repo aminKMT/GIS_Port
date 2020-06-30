@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>/series/</loc>
-    <lastmod>2019-12-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/syntax/</loc>
     <lastmod>2019-12-23T00:00:00+00:00</lastmod>
   </url>
@@ -38,35 +33,31 @@
   </url>
   
   <url>
-    <loc>/series/themes-guide/</loc>
-    <lastmod>2019-12-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/rich-content/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/calc/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <lastmod>2015-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/a/</loc>
+    <loc>/web/pub/</loc>
   </url>
   
   <url>
-    <loc>/tags/b/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/c/</loc>
+    <loc>/tags/publications/</loc>
   </url>
   
   <url>

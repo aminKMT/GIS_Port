@@ -1,7 +1,7 @@
 ---
 author: Amin Keramati
-date: "2019-03-05"
-description: Executed python script to allow map-matching of bike GPS points to a network in “ArcPy”.
+date: "2017-03-05"
+description: Executing python script to allow map-matching of bike GPS points to a network in “ArcPy”.
 imagelink:  https://giskeramati.netlify.app/Cover3.jpg 
 tags2:
 - emoji

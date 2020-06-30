@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Transportation GIS Projects</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2020, Amin keramati</copyright>
+    <copyright>© 2020, Amin Keramati</copyright>
     <lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
@@ -25,7 +25,7 @@ Project Abstract Highway-rail grade crossings (HRGCs) are where a roadway and ra
     <item>
       <title>Log-Truck Transportation Analysis</title>
       <link>/post/rich-content/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/rich-content/</guid>
       <description>Table of Contents  Project Abstract Data and Methodology 2.1. Study area (Step a) 2.2. GIS database (Step b) 2.3. Road Maintenance Scenarios (Step c) 2.4. Road Network Analysis (Step d)  Related Publication   
@@ -35,12 +35,22 @@ Project Abstract Wood transportation costs have significant impacts on timber in
     <item>
       <title>Bike Route Choice Modeling Analysis</title>
       <link>/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/emoji-support/</guid>
       <description>Table of Contents  Project Abstract Data Methodology  
 Project Abstract In this project, I executed several python scripts and GIS models to allow map-matching of more than 14,000 bike GPS points to the Downtown Toronto street network. These data are using as part of the project titled &amp;#34;Bike route choice modeling analysis&amp;#34;.  
 Data The GPS points in this project indicate several number of specific routes which are passed by several number of bike riders.</description>
+    </item>
+    
+    <item>
+      <title>HRGC Geometric Effect Calculator</title>
+      <link>/post/calc/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/calc/</guid>
+      <description>Click on the figure to run the calculator: 
+ Explanations: HRGC geometric effect calculator is an application designed to predict crash occurrence and severity likelihood changes over 30 years. The calculator works based on the Competing Risk Models which is one of the survival analysis approach and it is counted as a novel model in transportation safety analysis. Please refer here for more details about the model. Through this online application, you can change the geometrics characteristics of the highway-rail grade crossing and see the change effect on crash occurrence and severity changes over 30 years in interactive plots.</description>
     </item>
     
   </channel>
