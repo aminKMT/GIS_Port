@@ -63,6 +63,15 @@ Data The GPS points in this project indicate several number of specific routes w
     </item>
     
     <item>
+      <title>Map Gallery</title>
+      <link>/web/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/web/gallery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>/web/pub/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

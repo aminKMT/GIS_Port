@@ -44,6 +44,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "GIS Award"
     url = "https://www.ugpti.org/about/news/viewarticle.php?id=192&program=mpc"
     weight = 30
+  [[menu.main]]
+    identifier = "Maps"
+    name = "Map Gallery"
+    url = "/web/Gallery/"
+    weight = 30
     
     
 
