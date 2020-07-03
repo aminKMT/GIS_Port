@@ -51,7 +51,7 @@ In the following, I will explain just couple of above steps and GIS-related work
 
 <a name="Fig.1"></a>
 Figure 1: The Research Steps Flow Chart. <a name="Fig.1"></a>
-[<img src="/images/Figure1.png" alt="drawing" title="Klick to see Larger scale!" width="500"/>](/images/Figure1.png)
+[<img src="/images/Figure1.png" alt="drawing" title="Click to see Larger scale!" width="500"/>](/images/Figure1.png)
 
 <a name="Study_area"></a>
 ### Study area (Step a):
@@ -59,7 +59,7 @@ The state of Oregon is the case study considered in this paper because of its la
 
 <a name="Fig.2"></a>
 Figure 2: Oregon GIS Online basemap and Transportation Network GIS Layer . <a name="Fig.2"></a>
-[<img src="/images/Figure2.png" alt="drawing" title="Klick to see Transportation Network Map!" width="700"/>](/images/Figure2_2.png)
+[<img src="/images/Figure2.png" alt="drawing" title="Click to see Transportation Network Map!" width="700"/>](/images/Figure2_2.png)
 
 <a name="GIS_database"></a>
 ### GIS database (Step b)
@@ -142,7 +142,7 @@ timber location can be served by multiple wood mills.
 
 <a name="Fig.3"></a>
 Figure 3: Routing solution of operational maintenance policy (Scenario I). Map generated using ArcGIS software. <a name="Fig.3"></a>
-[<img src="/images/Figure3.png" alt="drawing" title="Klick to see Transportation Network Map!" width="700"/>](/images/Figure3.png)
+[<img src="/images/Figure3.png" alt="drawing" title="Click to see Transportation Network Map!" width="700"/>](/images/Figure3.png)
 
 [Fig.3](#Fig.3) illustrates the routing results (paths with shortest travel
 time) for the first road maintenance scenario (OML policy). The
@@ -167,7 +167,7 @@ mills.
 
 <a name="Fig.4"></a>
 Figure 4: Routing solution of objective maintenance policy (Scenario II). Map generated using ArcGIS software.
-[<img src="/images/Figure4.png" alt="drawing" title="Klick to see Larger Scale!" width="700"/>](/images/Figure4.png)
+[<img src="/images/Figure4.png" alt="drawing" title="Click to see Larger Scale!" width="700"/>](/images/Figure4.png)
 
 [Fig.4](#Fig.4) and [Fig.5](#Fig.5) indicate the results for objective maintenance policy
 (Scenario 2) and rehabilitation policy (Scenario 3), respectively. The
@@ -191,7 +191,7 @@ second scenario compared to 49% in the first scenario.
 
 <a name="Fig.5"></a>
 Figure 5: Routing solution of rehabilitation policy (Scenario III). Map generated using ArcGIS software. 
-[<img src="/images/Figure5.png" alt="drawing" title="Klick to see Larger Scale!" width="700"/>](/images/Figure5.png)
+[<img src="/images/Figure5.png" alt="drawing" title="Click to see Larger Scale!" width="700"/>](/images/Figure5.png)
 
 
 

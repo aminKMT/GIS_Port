@@ -38,7 +38,7 @@ Project Abstract Wood transportation costs have significant impacts on timber in
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/emoji-support/</guid>
-      <description>Table of Contents  Project Abstract Data Methodology  
+      <description>Table of Contents  Project Abstract Data Methodology   
 Project Abstract In this project, I executed several python scripts and GIS models to allow map-matching of more than 14,000 bike GPS points to the Downtown Toronto street network. These data are using as part of the project titled &amp;#34;Bike route choice modeling analysis&amp;#34;.  
 Data The GPS points in this project indicate several number of specific routes which are passed by several number of bike riders.</description>
     </item>
@@ -50,7 +50,7 @@ Data The GPS points in this project indicate several number of specific routes w
       
       <guid>/post/calc/</guid>
       <description>Click on the figure to run the calculator: 
- Explanations: HRGC geometric effect calculator is an application designed to predict crash occurrence and severity likelihood changes over 30 years. The calculator works based on the Competing Risk Models which is one of the survival analysis approach and it is counted as a novel model in transportation safety analysis. Please refer here for more details about the model. Through this online application, you can change the geometrics characteristics of the highway-rail grade crossing and see the change effect on crash occurrence and severity changes over 30 years in interactive plots.</description>
+ Explanations: HRGC geometric effect calculator is an application designed to predict crash occurrence and severity likelihood changes over 30 years. The calculator works based on the Competing Risk Models which is one of the survival analysis approach, and it is counted as a novel model in transportation safety analysis. Please refer here for more details about the model. Through this online application, you can change the geometric characteristics of the highway-rail grade crossing and see how these changes effect on crash occurrence and severity changes over 30-year time span with an interactive plot.</description>
     </item>
     
   </channel>

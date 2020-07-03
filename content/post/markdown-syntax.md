@@ -67,7 +67,7 @@ aligned and matched digitized crossings.
 
 <a name="Fig.1"></a>
 Figure 1: Integrated and overlaid coverage with geometric measurements <a name="Fig.1"></a>
-[<img src="/images/fig1array.png" alt="drawing" title="Klick to see Larger scale!" width="700"/>](/images/fig1array.png)
+[<img src="/images/fig1array.png" alt="drawing" title="Click to see Larger scale!" width="700"/>](/images/fig1array.png)
 
 <a name="Nearest_Intersection_&_Crossing_Distance"></a>
 ## Nearest Intersection & Crossing 
@@ -77,7 +77,7 @@ HRGC and then measuring the distance between the HRGC and the intersection/Cross
 
 <a name="Fig.2"></a>
 Figure 2: Finding the nearest road intersection and crossing along road and railroad <a name="Fig.2"></a>
-[<img src="/images/IIFig2.jpg" alt="drawing" title="Klick to see Larger scale!" width="700"/>](/images/IIFig2.jpg)
+[<img src="/images/IIFig2.jpg" alt="drawing" title="Click to see Larger scale!" width="700"/>](/images/IIFig2.jpg)
 
 <a name="Smallest_Crossing_Angle"></a>
 ## Smallest Crossing Angle
@@ -92,7 +92,7 @@ angle based on all the coordinates. Acute angle is calculated based on
 
 <a name="Fig.3"></a>
 Figure 3: Crossing angle geometric factor measurements at HRGC. 
-[<img src="/images/angdraw.png" alt="drawing" title="Klick to see Larger scale!" width="440"/>](/images/angdraw.png)<img src="/images/Degree_Zoom.png" alt="drawing" width="270"/>
+[<img src="/images/angdraw.png" alt="drawing" title="Click to see Larger scale!" width="440"/>](/images/angdraw.png)<img src="/images/Degree_Zoom.png" alt="drawing" width="270"/>
 
 
 ### Equation 1: Estimating Crossing Angle <a name="E1"></a>

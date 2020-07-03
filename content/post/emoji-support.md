@@ -12,7 +12,7 @@ title: Bike Route Choice Modeling Analysis
 1. [Project Abstract](#Project_Abstract2)
 2. [Data](#Data)
 3. [Methodology](#Methodology)
-
+***
 
 <a name="Project_Abstract2"></a>
 ## Project Abstract 
