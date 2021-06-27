@@ -21,4 +21,3 @@ title: Publications
 *	[**Keramati, A.**, Esmaeilian, M., & Rabieh, M. (2016). A New Model for The Multi-Mode Resource-Constrained Project Scheduling Problem with Discount Cash Flows. Journal of Industrial Management Studies.](https://www.sid.ir/en/Journal/ViewPaper.aspx?ID=515076)
 
 
-
